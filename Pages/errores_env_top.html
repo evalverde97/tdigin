@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>   
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="../scss/main.css">
+        <title>Extensión CBT</title>
+    </head>
+    <body>
+        <div class="mainTitle">
+            <div class="mainTitle__logo">
+                <img src="../Assets/logoCBT" alt="cbtLogo">
+            </div>
+        </div>
+        <div class="options">
+            <ul>
+                <li class="list1"><a data-toggle="tab" href="../index.html">Flujos&amp;OPL</a></li>
+                <li class="list1"><a data-toggle="tab" href="herramientas.html">Herramientas</a></li>
+                <li class="list1"><a data-toggle="tab" href="links.html">Links</a></li>
+                <li class="list1"><a data-toggle="tab" href="informativo.html">Informativo</a></li>
+                <li class="list1"><a data-toggle="tab" href="personal.html">Personal</a></li>
+                <li class="list1"><a data-toggle="tab" href="tdi.html">TDI</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <p class="breadcrumb" >Errores Envios</p>
+            <div class="detail">
+                <h3>PICKLIST</h3>
+            </div>
+                <div class="content_detail_picklist"></div>
+                    <div class="tooltip right">Calculador VIP y categorías
+                        <span class="tiptext"> Publicación no puede ofrecer Mercado Envíos  //  
+                            Se genera un error al calcular el costo de envío en la VIP (Por ejemplo: "El correo no llega a esa ciudad", "Por el momento no podemos realizar envíos a esa ubicación").</span>
+                    </div>
+                    <div class="tooltip right">Cargos de Envío
+                        <span class="tiptext">  Costo de envío a cargo del vendedor incorrecto
+                            // Costo de envío a cargo del comprador incorrecto</span>
+                    </div>
+                    <div class="tooltip right">Estado de Envío
+                        <span class="tiptext">
+                            Desactualización del estado del envío  // 
+                            
+                            Envío no entregado o cancelado con pago acreditado sin reclamo  //
+                            
+                            Error en el destaque "Entregas en el día" (Mercado Envíos Flex)  //
+                            
+                            Error en el destaque "Despachos en el día" (Mercado Envíos Colecta)  //
+                            
+                            Problemas/inconsistencias/demoras con la información mostrada en la sección de Mercado Envíos que se muestra en el Resumen de la Cuenta de ML o Summary
+                            </span>
+                    </div>
+                    <div class="tooltip right">Errores generales con Envíos/Etiquetas
+                        <span class="tiptext">
+                             Correo rechaza el paquete  // 
+                             Error al configurar las impresiones / etiquetas  //
+                             Error al escanear  //
+                             Error al imprimir   //
+                             Formato incorrecto en las etiquetas  //
+                             No se genera etiqueta, estado pendiente/esperando autorización  //
+                             Pedidos de Recolección  //
+                             La etiqueta se generó con dirección incorrecta  //
+                             Problemas al modificar la dirección una vez generada la operación</span>
+                    </div>
+                    <div class="tooltip right">Errores Envíos Flex
+                        <span class="tiptext">
+                            Error al ingresar a Configuraciones Flex  //
+                            Error al escanear el QR  //
+                            Envío con Flex a un CP sin cobertura  //
+                            Errores en la app de Flex  //
+                            Flex se activa en todas las publicaciones > ME2 Trial  //
+                            Item no ofrece Flex en la VIP  //
+                            Moderación Downgrade Same Day Flex, porcentaje incorrecto  //
+                            No puede agregar Flex a Item  //
+                            Usuario no puede marcar envío como Entregado  //
+                            Usuario en la WL no puede ofrecer Flex</span>
+                    </div>
+                    <div class="tooltip right">Direcciones
+                        <span class="tiptext"> Error al agregar/modificar dirección desde ‘mis datos’  //
+                            Error al ingresar CP/dirección al ofertar </span>
+                    </div>
+                    <div class="tooltip right">Devoluciones Express
+                        <span class="tiptext">El comprador utiliza una devolución express para devolver su producto con o sin carrito y sucede algun error  //  
+                            No se muestra la opción para utiizar la devolución express  //
+                            Problemas con la  etiqueta (no se genera)  //  
+                            No se devuelve el pago  //
+                            Le queda el dinero retenido al vendedor</span>
+                    </div>
+
+            <div class="detail">
+                <h3>TEMPLATE</h3>
+                    <ul>
+                        <li >Clasificación del motivo</li>
+                        <li >ID de envío</li>
+                        <li >Order ID</li>
+                        <li >Item ID</li>
+                        <li >Detalle del problema</li>
+                        <li >Capturas de pantalla</li>
+                    </ul>
+                    <button class="btn" data-clipboard-text="Clasificación del motivo: XXXX //            
+                    ID de envío: XXXX //Item ID: XXXX //Order ID: XXXX //Detalle del problema: XXXX">Copiar</button>
+                    <script src="../JS/clipboard.min.js"></script>
+                    <script>
+                        var clipboard = new ClipboardJS('.btn');
+                  
+                        clipboard.on('success', function (e) {
+                          console.log(e);
+                        });
+                  
+                        clipboard.on('error', function (e) {
+                          console.log(e);
+                        });
+                      </script> 
+            </div>
+        </div>
+    </body>    
+</html>

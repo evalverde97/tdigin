@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>   
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="../scss/main.css">
+        <title>Extensión CBT</title>
+    </head>
+    <body>
+        <div class="mainTitle">
+            <div class="mainTitle__logo">
+                <img src="../Assets/logoCBT" alt="cbtLogo">
+            </div>
+        </div>
+        <div class="options">
+            <ul>
+                <li class="list1"><a data-toggle="tab" href="../index.html">Flujos&amp;OPL</a></li>
+                <li class="list1"><a data-toggle="tab" href="herramientas.html">Herramientas</a></li>
+                <li class="list1"><a data-toggle="tab" href="links.html">Links</a></li>
+                <li class="list1"><a data-toggle="tab" href="informativo.html">Informativo</a></li>
+                <li class="list1"><a data-toggle="tab" href="personal.html">Personal</a></li>
+                <li class="list1"><a data-toggle="tab" href="tdi.html">TDI</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <p class="breadcrumb" >Errores Comprar ML</p>
+            <div class="detail">
+                <h3>PICKLIST</h3>
+            </div>
+            <div class="content_detail_picklist"></div>
+                    <div class="tooltip right">Errores con Cupón de descuentos ON
+                        <span class="tiptext">
+                            Error al pagar una compra del ML que se realizó con cupón de descuento
+                            O error en que no visualiza un cupón de descuento al pagar // 
+                            No recibir cupón para compras ON después de cumplir los TyC de la campana. Ej: Hacer pagos con tarjeta MP</span>
+                    </div>
+                    <div class="tooltip right">Error al Comprar/Pagar (sin orden ID)
+                        <span class="tiptext"> Errores antes de comprar (No carrito) //  Error al presionar comprar desde ML  // Errores de pago durante el checkout </span>
+                    </div>
+                    <div class="tooltip right">Error al Comprar/Pagar (con orden ID)
+                        <span class="tiptext">Errores despues de comprar (No carrito para comprador o vendedor) // Errores en el flujo de pago  // Error en el medio de pago  // Error en el estado de pago de una compra ML  //  Error relacionado con el correo electrónico
+                        </span>
+                    </div>
+                    <div class="tooltip right">Error al Comprar/Pagar con carrito (con carrito ID)
+                        <span class="tiptext">Todos los errores que surgen en el flujo de compra/ventas ON con carrito despues de comprar), independientemente de que el contacto sea del comprador o del vendedor.
+                              //  Errores en el flujo de compras de carrito ON - Marktplace Meli  // Error al presionar comprar un item en ML  //  Errores de pago durante el checkout  //  Se produce un error al acceder al método de pago o no aparece 
+
+                        </span>
+                    </div>
+                    <div class="tooltip right">Error al Comprar/Pagar con carrito (sin carrito ID)
+                        <span class="tiptext">Todos los errores que surgen en el flujo de compra/ventas ON con carrito antes de comprar), independientemente de que el contacto sea del comprador o del vendedor
+                              //  Errores en el flujo de compras de carrito ON - Marktplace Meli  //  Error al presionar comprar un item en ML  //  Errores de pago durante el checkout  //  
+                              Se produce un error al acceder al método de pago o no aparece
+                        </span>
+                    </div>
+            </div>
+            <div class="detail">
+                <h3>TEMPLATE</h3>
+                    <ul>
+                        <li >Clasificación del motivo</li>
+                        <li >Detalle del problema</li>
+                        <li >Order ID/ Pack ID (Si esta disponible)</li>
+                        <li >Item ID</li>
+                        <li >Capturas de pantalla</li>
+                        <li >URL donde ocurre el error</li>
+                    </ul>
+                    <button class="btn" data-clipboard-text="Clasificación del motivo: XXXX //            
+                    ID de la compra: XXXX //Detalle del problema: XXXX // Item ID: XXXX // URL donde ocurre el error: XXXX">Copiar</button>
+                    <script src="../JS/clipboard.min.js"></script>
+                    <script>
+                        var clipboard = new ClipboardJS('.btn');
+                  
+                        clipboard.on('success', function (e) {
+                          console.log(e);
+                        });
+                  
+                        clipboard.on('error', function (e) {
+                          console.log(e);
+                        });
+                      </script> 
+            </div>
+        </div>
+    </body>    
+</html>

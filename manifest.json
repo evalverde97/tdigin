@@ -1,0 +1,14 @@
+{
+"manifest_version":2,
+"name":"CBT Tools",
+"description":"Herramientas de CBT, por y para el team <3",
+"version": "1.5",
+"icons":{ 
+      "128":"128.png" 
+},
+"browser_action": {
+    "default_popup":"index.html",
+    "default_title":"CBT Tools"
+}
+}
+

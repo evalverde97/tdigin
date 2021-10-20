@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>   
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="../scss/main.css">
+        <title>Extensión CBT</title>
+    </head>
+    <body>
+        <div class="mainTitle">
+            <div class="mainTitle__logo">
+                <img src="../Assets/logoCBT" alt="cbtLogo">
+            </div>
+        </div>
+        <div class="options">
+            <ul>
+                <li class="list1"><a data-toggle="tab" href="../index.html">Flujos&amp;OPL</a></li>
+                <li class="list1"><a data-toggle="tab" href="herramientas.html">Herramientas</a></li>
+                <li class="list1"><a data-toggle="tab" href="links.html">Links</a></li>
+                <li class="list1"><a data-toggle="tab" href="informativo.html">Informativo</a></li>
+                <li class="list1"><a data-toggle="tab" href="personal.html">Personal</a></li>
+                <li class="list1"><a data-toggle="tab" href="tdi.html">TDI</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <p class="breadcrumb" >Errores en FAQ´s del Portal de Ayuda </p>
+            <div class="detail">
+                <h3>PICKLIST</h3>
+            </div>
+                <div class="content_detail_picklist"></div>
+                <div class="tooltip right">Portal de Ayuda ML/MP
+                    <span class="tiptext">
+                        Errores en el Portal de Ayuda de ML y MP  // 
+                        
+                        No se puede ingresar a una FAQ  // 
+                        
+                        Que alguna información se vea en otro idioma, o la información difiera una FAQ de otra  //
+                        
+                        Que se vea un error al iniciar una acción desde la FAQ.</span>
+                </div>
+        </div>
+            </div>
+            <div class="detail">
+                <h3>TEMPLATE</h3>
+                    <ul>
+                        <li >Clasificación del motivo</li>
+                        <li >Paso a paso en el portal hasta llegar al error</li>
+                        <li >Detalle del problema</li>
+                        <li >Capturas de pantalla</li>
+                        <li >URL donde se genera el error</li>
+                    </ul>
+                    <button class="btn" data-clipboard-text="Clasificación del motivo: XXXX //            
+                    Paso a paso en el portal hasta llegar al error: XXXX //Detalle del problema: XXXX // URL donde se genera el error: XXXX">Copiar</button>
+                    <script src="../JS/clipboard.min.js"></script>
+                    <script>
+                        var clipboard = new ClipboardJS('.btn');
+                  
+                        clipboard.on('success', function (e) {
+                          console.log(e);
+                        });
+                  
+                        clipboard.on('error', function (e) {
+                          console.log(e);
+                        });
+                      </script> 
+            </div>
+        </div>
+    </body>    
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>   
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="../scss/main.css">
+        <title>Extensión CBT</title>
+    </head>
+    <body>
+        <div class="mainTitle">
+            <div class="mainTitle__logo">
+                <img src="../Assets/logoCBT" alt="cbtLogo">
+            </div>
+        </div>
+        <div class="content">
+            <p class="breadcrumb" >Errores Mercado Pago</p>
+            <div class="detail">
+                <h3>PICKLIST</h3>
+            </div>
+            <div class="content_detail_picklist"></div>
+                    <div class="tooltip right">Errores en la Sección Seguros
+
+                        <span class="tiptext"> Errores relacionados a:
+                             Contratar un seguro desde la APP de Mercado Pago  //
+                             Cancelar el seguro vigente  //
+                             Renovar el seguro  //
+                             Accionar el seguro  //
+                             Datos del seguro contratado</span>
+                    </div>
+                    <div class="tooltip right">Errores en la sección Configuración MP
+                        <span class="tiptext"> Problemas al crear/modificar/eliminar datos de tu negocio  //
+                            Problemas al clickear preferencias de pagos  //
+                            Problemas al ingresar a la sección de gestión y administración  //
+                            Problemas al ingresar a la sección de impuestos y facturación </span>
+                    </div>
+                    <div class="tooltip right">Errores en la sección de Costos MP
+                        <span class="tiptext">Errores al modificar tasas y plazos  //
+                             Errores al activar cuotas sin interés  //
+                             Errores al activar Ahora 12</span>
+                    </div>
+                    <div class="tooltip right">Errores en la Sección Tu Negocio MP
+                        <span class="tiptext">Problemas en el flujo de alta colaboradores  //
+                             Problemas en el flujo de modificar y/o sacar un permiso al colaboradores  //
+                             Problemas al crear un catálogo de producto en MP  //
+                             Problemas al utilizar el simulador de costos  //  NO SE VEN CASOS POR PROBLEMAS CON ACCIONES DE COLABORADORES</span>
+                    </div>
+                    <div class="tooltip right">Errores en Dashboard de Métrica MP
+                        <span class="tiptext">Inconsistencias en la información mostrada en el Dashboard de métricas  //  
+                             Al ingresar al Dashboard la página no carga, ve un mensaje de error, no puede ingresar a una sección</span>
+                    </div>
+                    <div class="tooltip right">Errores visuales en inicio/home de MP
+                        <span class="tiptext">Problema al cargar datos de la Home //
+                             Pantalla en blanco después de iniciar sesión  //
+                             Se cierra la app de Mercado Pago después de iniciar sesión  //
+                             Problemas con las notificaciones que quiere recibir en Mercado Pago</span>
+                    </div>
+            </div>
+            <div class="detail">
+                <h3>TEMPLATE</h3>
+                <ul>
+                    <li >Clasificación del motivo</li>
+                    <li >Payment ID</li>
+                    <li >Paso a paso hasta llegar al error</li>
+                    <li >Detalle del problema</li>
+                    <li >Capturas de pantalla</li>
+                </ul>
+                    <button class="btn" data-clipboard-text="Clasificación del motivo: XXXX //            
+                    Payment ID: XXXX //Detalle del problema: XXXX // Capturas de pantalla">Copiar</button>
+                    <script src="../JS/clipboard.min.js"></script>
+                    <script>
+                        var clipboard = new ClipboardJS('.btn');
+                  
+                        clipboard.on('success', function (e) {
+                          console.log(e);
+                        });
+                  
+                        clipboard.on('error', function (e) {
+                          console.log(e);
+                        });
+                      </script> 
+            </div>
+
+        </div>
+        <div class="content py-30">
+            <button class="button--back"><a class="button--back" href="tdi_gin_topon.html">Volver</a></button>
+        </div>
+    </body>    
+</html>
