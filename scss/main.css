@@ -6,7 +6,7 @@
 
 a {
   text-decoration: none !important;
-  color: #230a4c;
+  color: #2D3277;
 }
 
 .mainTitle {
@@ -38,7 +38,7 @@ a {
   justify-content: center;
   flex-wrap: nowrap;
   align-items: center;
-  color: #fc7701;
+  color: #FFD100;
   transition: all 0, 5s ease-in-out;
 }
 
@@ -46,15 +46,15 @@ a {
   list-style: none;
   display: inline-block;
   padding: 15px;
-  color: #230a4c;
+  color: #2D3277;
 }
 .list1 a {
   text-decoration: none;
-  color: #230a4c;
+  color: #2D3277;
   font-weight: 400;
 }
 .list1 :hover {
-  border: 3px solid #fc7701;
+  border: 3px solid #FFD100;
 }
 
 .mainGrid {
@@ -72,8 +72,8 @@ a {
   justify-content: center;
   text-decoration: none;
   margin: 2px;
-  background-color: #fc7701;
-  color: #230a4c;
+  background-color: #FFD100;
+  color: #2D3277;
   border-radius: 15px;
   transition: all 0.5s ease-in-out;
 }
@@ -91,17 +91,17 @@ a {
   justify-content: center;
   text-decoration: none;
   margin: 2px;
-  background-color: #230a4c;
-  color: #fc7701;
+  background-color: #2D3277;
+  color: #FFD100;
   border-radius: 15px;
   transition: all 0.5s ease-in-out;
 }
 
 #form__mejora {
-  background-color: #230a4c;
+  background-color: #2D3277;
 }
 #form__mejora a {
-  color: #fc7701 !important;
+  color: #FFD100 !important;
 }
 
 textarea {
@@ -158,7 +158,7 @@ textarea {
 .calcular input {
   width: 60px;
   height: 30px;
-  border: 4px solid #fc7701;
+  border: 4px solid #FFD100;
   border-radius: 4px;
 }
 
